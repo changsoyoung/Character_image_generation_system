@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>login</title>
+</head>
+<body class="position-relative bg-dark">
+    <form method="POST" enctype="multipart/form-data" action="{{ url_for('upload_done')}}">
+        <label for="file">
+            <div class="btn btn-primary">
+                사진을 선택하세요
+            </div>
+        </label>
+        <input class="file_input" type="file" name="file" id="file"/>
+        <input class="btn btn-warning" type="submit"/>
+    </form>
+</body>
+</html>

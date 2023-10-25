@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    font-family: 'SUITE-Regular';
+}
+
+html, body{
+    height: 100%;
+}
+
+.mainForm{
+    min-height: 60%;
+}
+
+.login_title{
+    font-size: 45px;
+    background: -webkit-linear-gradient(45deg,#121FCF, #CF1512);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text_input{
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 3px 3px 11px 0px rgba(0,0,0,0.5) inset;
+    -webkit-box-shadow:3px 3px 11px 0px rgba(0,0,0,0.5) inset;
+    -moz-box-shadow: 3px 3px 11px 0px rgba(0,0,0,0.5) inset;
+    width: 90%;
+    height: 30px;
+}
+
+.file_input{
+    display: none;
+}
+
+.find-btn{
+	text-align: center;
+    display :inline-block;
+}
+
+.input-file-button{
+    padding: 6px 25px;
+    background-color:#072b1ae0;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+.choose-file-button{
+    padding: 6px 25px;
+    background-color:#198754;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+.submit-file-button{
+    padding: 6px 25px;
+    background-color:#8ac088;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}

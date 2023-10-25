@@ -1,0 +1,15 @@
+# disney pt파일 ignore
+static\disney\disney.pt
+static\disney\face.pt
+static\disney\inversion_stats.npz
+
+# photo2cartoon pt파일 ignore
+static\photo2cartoon\models\photo2cartoon_weights.pt
+
+# 
+pybo/
+no/
+
+#가상환경
+disneyenv/
+photo2cartoonenv/

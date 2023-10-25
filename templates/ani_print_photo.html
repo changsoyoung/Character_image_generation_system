@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>I-SCREEN</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{{ url_for('static', filename='css/first.css') }}" rel="stylesheet" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin:0;
+            padding:0;
+        }
+
+        .festival {
+            position: fixed;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+
+            background: white;
+        }
+        .festival > .firecracker {
+            font-size: 15px;
+
+            width:1em;
+            height:1em;
+
+            background: rgba(255, 255, 255, 0.5);
+
+            position: absolute;
+            
+            border-radius: 50%;
+
+            /* 8방향 그림자 */
+            box-shadow: 
+                0 0 0 0 #FCFFA6,
+                0 0 0 0 #C1FFD7,
+                0 0 0 0 #B5DEFF,
+                0 0 0 0 #CAB8FF,
+                0 0 0 0 #B5EAEA,
+                0 0 0 0 #EDF6E5,
+                0 0 0 0 #FFBCBC,    
+                0 0 0 0 #F38BA0
+                ;
+
+            transition-property: box-shadow;
+            transition-duration: 2s;
+            transition-timing-function: eaes-out;
+        }
+
+        .festival > .firecracker.boom {
+            background:rgba(0, 0, 0, 0);
+
+            /* 8방향 그림자 */
+            box-shadow: 
+                5em 0 1em 0 #FCFFA6,
+                -5em 0 1em 0 #B5DEFF,
+                0 5em 1em 0 #CAB8FF,
+                0 -5em 1em 0 #B5EAEA,
+                3.5em 3.5em 1em 0 #C1FFD7,
+                3.5em -3.5em 1em 0 #EDF6E5,
+                -3.5em 3.5em 1em 0 #FFBCBC,    
+                -3.5em -3.5em 1em 0 #F38BA0
+                ;
+        }
+
+        .happy-new-year {
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+
+            color: white;
+
+            font-family: 'Permanent Marker', cursive;
+            font-size: 120px;
+            white-space: nowrap;
+            text-align: center;
+
+            padding: 0.25em;
+
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+
+            background-clip: text;
+            -webkit-background-clip: text;
+
+            background-color: rgb(255,255,255);
+            background-image: linear-gradient(150deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(255,222,0,1) 50%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%);
+            background-size: 500%;
+            background-position: 0 0;
+
+            animation: blingbling 2s ease-in-out infinite;
+        }
+
+        @keyframes blingbling {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 100% 0;
+            }
+        }
+
+        /* 유리 효과 */
+        .happy-new-year::before {
+            content:"";
+            position:absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+
+            box-shadow: inset 0 0 2000px rgba(255, 255, 255, 1);
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width:1000px){
+            .happy-new-year {
+                font-size: 75px;
+            }
+        }
+        @media screen and (max-width:640px){
+            .happy-new-year {
+                font-size: 50px;
+                white-space: pre-wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pageheader">
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">I-SCREEN</a>
+            </div>
+        </nav>
+    </div>
+    <div class="festival" style="text-align : center; top:180" >
+        <article id="580c83e4-b0ec-45a5-8f30-f12f2eb1a864" class="page sans">
+            <header class="masthead-print bg-primary text-white text-center">
+                <div class="container d-flex align-items-center flex-column">
+                    <h1 class="page-title">
+                        AI가 그려주는 캐리커처
+                    </h1>
+                </div> 
+            </header>
+            <div class="page-body">
+                <p id="93fb4fae-daeb-40e5-a8d5-ce8df6e11816" class=""></p>
+                <p id="fd446a1b-2e28-44eb-b2b5-d321a18e4df3" class=""></p>
+                <p id="7f4cb9e4-e34a-466b-b306-8fef24ad97a6" class="">
+                    <div>
+                        <img src = "{{url_for('static', filename = 'photo/result_cartoon.png')}}" style="display: block; margin: 0 auto; width:500px; height:500px;">
+                    </div>
+                </p>
+            </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        const generateRandom = function(begin, end){
+            const max = Math.max(begin, end);
+            const min = Math.min(begin, end);
+            const range = max - min;
+            return Math.random() * range + min;
+        };
+        const generateRandomInteger = function(begin, end){
+            return parseInt(generateRandom(begin, end));
+        };
+
+        $(function(){
+            
+            setInterval(()=>{
+
+                //.firecracker 추가
+                const firecracker = $("<div>").addClass("firecracker");
+                
+                //초기 스타일 설정
+                firecracker.css("font-size", generateRandomInteger(5, 30)+"px")
+                                .css("left", generateRandomInteger(0, 100)+"%")
+                                .css("top", "110%");
+
+                $(".festival").append(firecracker);
+
+                //랜덤값 설정(애니메이션을 위해)
+                const top = generateRandomInteger(5, 95);
+                const left = generateRandomInteger(5, 95);
+                const duration = generateRandomInteger(2000, 4000);
+
+                //애니메이션 설정
+                firecracker.animate({
+                    top:top+"%",
+                    left:left+"%"
+                }, duration, ()=>{
+                    //폭발하는 모션을 위한 클래스 추가
+                    firecracker.addClass("boom");
+
+                    //폭발모션은 지속시간이 2초이므로 2.5초 후 태그 제거
+                    setTimeout(()=>{
+                        firecracker.remove();
+                    }, 2500);
+                });
+
+            }, 200);//delay를 조절하면 폭죽 발사 속도 조절 가능(빠를 수록 시스템에 무리감)
+
+        });
+
+    </script>
+</body>
+</html>
