@@ -10,6 +10,21 @@ static\photo2cartoon\models\photo2cartoon_weights.pt
 pybo/
 no/
 
+do_gray.PNG
+do.jpg
+flask_ex.py
+flask_print.py
+print.py
+
+templates\file_upload.html
+templates\file.html
+templates\hello_eyescreen.html
+templates\hello.html
+templates\apply_photo.html
+static\javascript\file.js
+
+
 #가상환경
 disneyenv/
 photo2cartoonenv/
+

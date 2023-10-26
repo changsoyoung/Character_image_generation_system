@@ -28,14 +28,6 @@ def register():
 def main():
     return render_template("index2.html")
 
-# 파일 업로드 진행 화면
-@app.route("/apply")
-def apply():
-    #apply_photo.html
-    return render_template("apply_photo.html")
-
-
-
 @app.route("/upload_done", methods=["POST"])
 def upload_done():
     input_file = 'static/img/1.jpeg'
